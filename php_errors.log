@@ -1,0 +1,677 @@
+[21-Sep-2017 12:39:15 UTC] PHP Warning:  require_once(templates/partials/menu.phtml): failed to open stream: No such file or directory in /home/ubuntu/workspace/MaBdtheque/admin/templates/partials/header.phtml on line 11
+[21-Sep-2017 12:39:15 UTC] PHP Stack trace:
+[21-Sep-2017 12:39:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/index.php:0
+[21-Sep-2017 12:39:15 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/index.php:9
+[21-Sep-2017 12:39:15 UTC] PHP   3. require_once() /home/ubuntu/workspace/MaBdtheque/admin/templates/index.phtml:2
+[21-Sep-2017 12:39:15 UTC] PHP Fatal error:  require_once(): Failed opening required 'templates/partials/menu.phtml' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/MaBdtheque/admin/templates/partials/header.phtml on line 11
+[21-Sep-2017 12:39:15 UTC] PHP Stack trace:
+[21-Sep-2017 12:39:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/index.php:0
+[21-Sep-2017 12:39:15 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/index.php:9
+[21-Sep-2017 12:39:15 UTC] PHP   3. require_once() /home/ubuntu/workspace/MaBdtheque/admin/templates/index.phtml:2
+[21-Sep-2017 12:41:42 UTC] PHP Warning:  require_once(menu.phtml): failed to open stream: No such file or directory in /home/ubuntu/workspace/MaBdtheque/admin/templates/partials/header.phtml on line 11
+[21-Sep-2017 12:41:42 UTC] PHP Stack trace:
+[21-Sep-2017 12:41:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/index.php:0
+[21-Sep-2017 12:41:42 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/index.php:9
+[21-Sep-2017 12:41:42 UTC] PHP   3. require_once() /home/ubuntu/workspace/MaBdtheque/admin/templates/index.phtml:2
+[21-Sep-2017 12:41:42 UTC] PHP Fatal error:  require_once(): Failed opening required 'menu.phtml' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/MaBdtheque/admin/templates/partials/header.phtml on line 11
+[21-Sep-2017 12:41:42 UTC] PHP Stack trace:
+[21-Sep-2017 12:41:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/index.php:0
+[21-Sep-2017 12:41:42 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/index.php:9
+[21-Sep-2017 12:41:42 UTC] PHP   3. require_once() /home/ubuntu/workspace/MaBdtheque/admin/templates/index.phtml:2
+[21-Sep-2017 12:58:16 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'dessinateur.nom' in 'field list'' in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php:33
+Stack trace:
+#0 /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php(33): PDO->query('SELECT album.ti...')
+#1 /home/ubuntu/workspace/MaBdtheque/admin/index.php(6): getAllAlbums()
+#2 {main}
+  thrown in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 33
+[21-Sep-2017 13:00:50 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'scenariste.nom_' in 'field list'' in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php:34
+Stack trace:
+#0 /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php(34): PDO->query('SELECT album.ti...')
+#1 /home/ubuntu/workspace/MaBdtheque/admin/index.php(6): getAllAlbums()
+#2 {main}
+  thrown in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 34
+[21-Sep-2017 14:33:32 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 56
+[21-Sep-2017 14:33:32 UTC] PHP Stack trace:
+[21-Sep-2017 14:33:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/index.php:0
+[21-Sep-2017 14:58:57 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':monid
+	
+	ORDER BY titre' at line 21' in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php:67
+Stack trace:
+#0 /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php(67): PDO->query('SELECT album.ti...')
+#1 /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php(7): getUnAlbum('')
+#2 {main}
+  thrown in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 67
+[21-Sep-2017 23:31:27 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':monid
+	
+	ORDER BY titre' at line 21' in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php:67
+Stack trace:
+#0 /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php(67): PDO->query('SELECT album.ti...')
+#1 /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php(6): getUnAlbum('')
+#2 {main}
+  thrown in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 67
+[21-Sep-2017 23:33:09 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':monid
+	
+	ORDER BY titre' at line 21' in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php:67
+Stack trace:
+#0 /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php(67): PDO->query('SELECT album.ti...')
+#1 /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php(6): getUnAlbum('')
+#2 {main}
+  thrown in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 67
+[21-Sep-2017 23:34:06 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':monid' at line 21' in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php:66
+Stack trace:
+#0 /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php(66): PDO->query('SELECT album.ti...')
+#1 /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php(6): getUnAlbum('')
+#2 {main}
+  thrown in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 66
+[21-Sep-2017 23:37:55 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':monid' at line 21' in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php:66
+Stack trace:
+#0 /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php(66): PDO->query('SELECT album.ti...')
+#1 /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php(6): getUnAlbum('')
+#2 {main}
+  thrown in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 66
+[21-Sep-2017 23:41:56 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':monid' at line 20' in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php:64
+Stack trace:
+#0 /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php(64): PDO->query('SELECT album.ti...')
+#1 /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php(6): getUnAlbum('')
+#2 {main}
+  thrown in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 64
+[21-Sep-2017 23:44:00 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':monid' at line 20' in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php:64
+Stack trace:
+#0 /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php(64): PDO->query('SELECT album.ti...')
+#1 /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php(6): getUnAlbum('')
+#2 {main}
+  thrown in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 64
+[22-Sep-2017 00:22:11 UTC] PHP Parse error:  syntax error, unexpected '{', expecting '(' in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 87
+[22-Sep-2017 00:22:11 UTC] PHP Stack trace:
+[22-Sep-2017 00:22:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/index.php:0
+[22-Sep-2017 00:22:59 UTC] PHP Parse error:  syntax error, unexpected '{', expecting '(' in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 87
+[22-Sep-2017 00:22:59 UTC] PHP Stack trace:
+[22-Sep-2017 00:22:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/index.php:0
+[22-Sep-2017 00:23:06 UTC] PHP Parse error:  syntax error, unexpected '{', expecting '(' in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 87
+[22-Sep-2017 00:23:06 UTC] PHP Stack trace:
+[22-Sep-2017 00:23:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/index.php:0
+[22-Sep-2017 00:25:03 UTC] PHP Parse error:  syntax error, unexpected '{', expecting '(' in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 91
+[22-Sep-2017 00:25:03 UTC] PHP Stack trace:
+[22-Sep-2017 00:25:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/index.php:0
+[22-Sep-2017 00:25:41 UTC] PHP Parse error:  syntax error, unexpected 'emprunte' (T_STRING) in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 99
+[22-Sep-2017 00:25:41 UTC] PHP Stack trace:
+[22-Sep-2017 00:25:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/index.php:0
+[22-Sep-2017 00:26:41 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 95
+[22-Sep-2017 00:26:41 UTC] PHP Stack trace:
+[22-Sep-2017 00:26:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/index.php:0
+[22-Sep-2017 00:26:41 UTC] PHP   2. getAllEmprunte() /home/ubuntu/workspace/MaBdtheque/admin/index.php:5
+[22-Sep-2017 00:27:48 UTC] PHP Warning:  require_once(/home/ubuntu/workspace/MaBdtheque/admin/templates/index.phtml): failed to open stream: No such file or directory in /home/ubuntu/workspace/MaBdtheque/admin/index.php on line 8
+[22-Sep-2017 00:27:48 UTC] PHP Stack trace:
+[22-Sep-2017 00:27:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/index.php:0
+[22-Sep-2017 00:27:48 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/ubuntu/workspace/MaBdtheque/admin/templates/index.phtml' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/MaBdtheque/admin/index.php on line 8
+[22-Sep-2017 00:27:48 UTC] PHP Stack trace:
+[22-Sep-2017 00:27:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/index.php:0
+[22-Sep-2017 00:34:46 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MaBdtheque/admin/templates/index.phtml on line 14
+[22-Sep-2017 00:34:46 UTC] PHP Stack trace:
+[22-Sep-2017 00:34:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/index.php:0
+[22-Sep-2017 00:34:46 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/index.php:8
+[22-Sep-2017 00:35:51 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MaBdtheque/admin/templates/index.phtml on line 12
+[22-Sep-2017 00:35:51 UTC] PHP Stack trace:
+[22-Sep-2017 00:35:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/index.php:0
+[22-Sep-2017 00:35:51 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/index.php:7
+[22-Sep-2017 00:37:34 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MaBdtheque/admin/templates/index.phtml on line 13
+[22-Sep-2017 00:37:34 UTC] PHP Stack trace:
+[22-Sep-2017 00:37:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/index.php:0
+[22-Sep-2017 00:37:34 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/index.php:7
+[22-Sep-2017 00:38:33 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MaBdtheque/admin/templates/index.phtml on line 13
+[22-Sep-2017 00:38:33 UTC] PHP Stack trace:
+[22-Sep-2017 00:38:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/index.php:0
+[22-Sep-2017 00:38:33 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/index.php:7
+[22-Sep-2017 00:41:30 UTC] PHP Parse error:  syntax error, unexpected ':' in /home/ubuntu/workspace/MaBdtheque/admin/templates/index.phtml on line 5
+[22-Sep-2017 00:41:30 UTC] PHP Stack trace:
+[22-Sep-2017 00:41:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/index.php:0
+[22-Sep-2017 00:42:36 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MaBdtheque/admin/templates/index.phtml on line 12
+[22-Sep-2017 00:42:36 UTC] PHP Stack trace:
+[22-Sep-2017 00:42:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/index.php:0
+[22-Sep-2017 00:42:36 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/index.php:7
+[22-Sep-2017 00:44:56 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MaBdtheque/admin/templates/index.phtml on line 12
+[22-Sep-2017 00:44:56 UTC] PHP Stack trace:
+[22-Sep-2017 00:44:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/index.php:0
+[22-Sep-2017 00:44:56 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/index.php:7
+[22-Sep-2017 07:19:51 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':monid' at line 20' in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php:65
+Stack trace:
+#0 /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php(65): PDO->query('SELECT album.*,...')
+#1 /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php(7): getUnAlbum('3')
+#2 {main}
+  thrown in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 65
+[22-Sep-2017 07:33:59 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':monid' at line 20' in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php:65
+Stack trace:
+#0 /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php(65): PDO->query('SELECT album.*,...')
+#1 /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php(7): getUnAlbum('3')
+#2 {main}
+  thrown in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 65
+[22-Sep-2017 10:12:19 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':monid' at line 20' in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php:65
+Stack trace:
+#0 /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php(65): PDO->query('SELECT album.*,...')
+#1 /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php(7): getUnAlbum('3')
+#2 {main}
+  thrown in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 65
+[22-Sep-2017 10:16:43 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':monid' at line 20' in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php:66
+Stack trace:
+#0 /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php(66): PDO->query('SELECT album.*,...')
+#1 /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php(7): getUnAlbum('3')
+#2 {main}
+  thrown in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 66
+[22-Sep-2017 10:18:32 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':monid' at line 20' in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php:66
+Stack trace:
+#0 /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php(66): PDO->query('SELECT album.*,...')
+#1 /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php(7): getUnAlbum('3')
+#2 {main}
+  thrown in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 66
+[22-Sep-2017 10:21:58 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':monid' at line 20' in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php:66
+Stack trace:
+#0 /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php(66): PDO->query('SELECT album.*,...')
+#1 /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php(7): getUnAlbum('3')
+#2 {main}
+  thrown in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 66
+[22-Sep-2017 10:24:32 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':monid' at line 21' in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php:67
+Stack trace:
+#0 /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php(67): PDO->query('SELECT album.*,...')
+#1 /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php(7): getUnAlbum('3')
+#2 {main}
+  thrown in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 67
+[22-Sep-2017 22:24:40 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':monid' at line 21' in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php:67
+Stack trace:
+#0 /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php(67): PDO->query('SELECT album.*,...')
+#1 /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php(7): getUnAlbum('5')
+#2 {main}
+  thrown in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 67
+[23-Sep-2017 04:39:44 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':monid' at line 21' in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php:67
+Stack trace:
+#0 /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php(67): PDO->query('SELECT album.*,...')
+#1 /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php(7): getUnAlbum('5')
+#2 {main}
+  thrown in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 67
+[23-Sep-2017 05:12:23 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':monid' at line 22' in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php:68
+Stack trace:
+#0 /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php(68): PDO->query('SELECT album.*,...')
+#1 /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php(7): getUnAlbum('6')
+#2 {main}
+  thrown in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 68
+[23-Sep-2017 05:16:50 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':monid' at line 22' in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php:68
+Stack trace:
+#0 /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php(68): PDO->query('SELECT album.*,...')
+#1 /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php(7): getUnAlbum('6')
+#2 {main}
+  thrown in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 68
+[23-Sep-2017 07:21:50 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nom' in 'order clause'' in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php:119
+Stack trace:
+#0 /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php(119): PDO->query('??SELECT scenar...')
+#1 /home/ubuntu/workspace/MaBdtheque/admin/rechercheauteur.php(5): getAllAuthor()
+#2 {main}
+  thrown in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 119
+[24-Sep-2017 17:56:20 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':monid' at line 22' in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php:68
+Stack trace:
+#0 /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php(68): PDO->query('SELECT album.*,...')
+#1 /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php(7): getUnAlbum('6')
+#2 {main}
+  thrown in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 68
+[24-Sep-2017 19:25:40 UTC] PHP Parse error:  syntax error, unexpected '"?>"' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/ubuntu/workspace/MaBdtheque/admin/templates/rechercheauteur.phtml on line 19
+[24-Sep-2017 19:25:40 UTC] PHP Stack trace:
+[24-Sep-2017 19:25:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/rechercheauteur.php:0
+[24-Sep-2017 19:27:34 UTC] PHP Fatal error:  Call to a member function execute() on a non-object in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 123
+[24-Sep-2017 19:27:34 UTC] PHP Stack trace:
+[24-Sep-2017 19:27:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspar.php:0
+[24-Sep-2017 19:27:34 UTC] PHP   2. getAuthorAlbums() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspar.php:5
+[24-Sep-2017 19:48:46 UTC] PHP Warning:  require_once(templates/listealbumspar.phtml): failed to open stream: No such file or directory in /home/ubuntu/workspace/MaBdtheque/admin/listealbumspar.php on line 7
+[24-Sep-2017 19:48:46 UTC] PHP Stack trace:
+[24-Sep-2017 19:48:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspar.php:0
+[24-Sep-2017 19:48:46 UTC] PHP Fatal error:  require_once(): Failed opening required 'templates/listealbumspar.phtml' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/MaBdtheque/admin/listealbumspar.php on line 7
+[24-Sep-2017 19:48:46 UTC] PHP Stack trace:
+[24-Sep-2017 19:48:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspar.php:0
+[24-Sep-2017 21:10:25 UTC] PHP Parse error:  syntax error, unexpected '$album' (T_VARIABLE), expecting '(' in /home/ubuntu/workspace/MaBdtheque/admin/templates/listealbumspourcetauteur.phtml on line 23
+[24-Sep-2017 21:10:25 UTC] PHP Stack trace:
+[24-Sep-2017 21:10:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetauteur.php:0
+[24-Sep-2017 22:50:50 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':monid' at line 22' in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php:68
+Stack trace:
+#0 /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php(68): PDO->query('SELECT album.*,...')
+#1 /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php(7): getUnAlbum('6')
+#2 {main}
+  thrown in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 68
+[24-Sep-2017 23:35:17 UTC] PHP Warning:  require_once(templates/recherchedessinateur.phtml): failed to open stream: No such file or directory in /home/ubuntu/workspace/MaBdtheque/admin/recherchedessinateur.php on line 7
+[24-Sep-2017 23:35:17 UTC] PHP Stack trace:
+[24-Sep-2017 23:35:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/recherchedessinateur.php:0
+[24-Sep-2017 23:35:17 UTC] PHP Fatal error:  require_once(): Failed opening required 'templates/recherchedessinateur.phtml' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/MaBdtheque/admin/recherchedessinateur.php on line 7
+[24-Sep-2017 23:35:17 UTC] PHP Stack trace:
+[24-Sep-2017 23:35:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/recherchedessinateur.php:0
+[24-Sep-2017 23:39:32 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MaBdtheque/admin/templates/recherchedessinateur.phtml on line 14
+[24-Sep-2017 23:39:32 UTC] PHP Stack trace:
+[24-Sep-2017 23:39:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/recherchedessinateur.php:0
+[24-Sep-2017 23:39:32 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/recherchedessinateur.php:7
+[25-Sep-2017 00:20:41 UTC] PHP Parse error:  syntax error, unexpected 'serie' (T_STRING), expecting ']' in /home/ubuntu/workspace/MaBdtheque/admin/templates/listealbumspourcetauteur.phtml on line 23
+[25-Sep-2017 00:20:41 UTC] PHP Stack trace:
+[25-Sep-2017 00:20:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetauteur.php:0
+[25-Sep-2017 00:30:13 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':monid' at line 22' in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php:67
+Stack trace:
+#0 /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php(67): PDO->query('SELECT album.*,...')
+#1 /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php(7): getUnAlbum('7')
+#2 {main}
+  thrown in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 67
+[25-Sep-2017 00:33:19 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':monid' at line 22' in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php:67
+Stack trace:
+#0 /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php(67): PDO->query('SELECT album.*,...')
+#1 /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php(7): getUnAlbum('8')
+#2 {main}
+  thrown in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 67
+[25-Sep-2017 00:33:59 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':monid' at line 22' in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php:67
+Stack trace:
+#0 /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php(67): PDO->query('SELECT album.*,...')
+#1 /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php(7): getUnAlbum('8')
+#2 {main}
+  thrown in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 67
+[25-Sep-2017 00:35:43 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':monid' at line 22' in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php:67
+Stack trace:
+#0 /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php(67): PDO->query('SELECT album.*,...')
+#1 /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php(7): getUnAlbum('8')
+#2 {main}
+  thrown in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 67
+[25-Sep-2017 00:35:53 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':monid' at line 22' in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php:67
+Stack trace:
+#0 /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php(67): PDO->query('SELECT album.*,...')
+#1 /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php(7): getUnAlbum('4')
+#2 {main}
+  thrown in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 67
+[25-Sep-2017 00:36:10 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':monid' at line 22' in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php:67
+Stack trace:
+#0 /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php(67): PDO->query('SELECT album.*,...')
+#1 /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php(7): getUnAlbum('1')
+#2 {main}
+  thrown in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 67
+[25-Sep-2017 00:44:13 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':id' at line 22' in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php:67
+Stack trace:
+#0 /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php(67): PDO->query('SELECT album.*,...')
+#1 /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php(7): getUnAlbum('1')
+#2 {main}
+  thrown in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 67
+[25-Sep-2017 01:47:23 UTC] PHP Parse error:  syntax error, unexpected 'id' (T_STRING) in /home/ubuntu/workspace/MaBdtheque/admin/templates/modifieralbum.phtml on line 30
+[25-Sep-2017 01:47:23 UTC] PHP Stack trace:
+[25-Sep-2017 01:47:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php:0
+[25-Sep-2017 01:48:06 UTC] PHP Parse error:  syntax error, unexpected 'id' (T_STRING) in /home/ubuntu/workspace/MaBdtheque/admin/templates/modifieralbum.phtml on line 30
+[25-Sep-2017 01:48:06 UTC] PHP Stack trace:
+[25-Sep-2017 01:48:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php:0
+[25-Sep-2017 02:17:32 UTC] PHP Parse error:  syntax error, unexpected ':', expecting ';' in /home/ubuntu/workspace/MaBdtheque/admin/templates/modifieralbum.phtml on line 29
+[25-Sep-2017 02:17:32 UTC] PHP Stack trace:
+[25-Sep-2017 02:17:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php:0
+[25-Sep-2017 02:21:09 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MaBdtheque/admin/templates/modifieralbum.phtml on line 26
+[25-Sep-2017 02:21:09 UTC] PHP Stack trace:
+[25-Sep-2017 02:21:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php:0
+[25-Sep-2017 02:21:09 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php:11
+[25-Sep-2017 02:21:26 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MaBdtheque/admin/templates/modifieralbum.phtml on line 26
+[25-Sep-2017 02:21:26 UTC] PHP Stack trace:
+[25-Sep-2017 02:21:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php:0
+[25-Sep-2017 02:21:26 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php:11
+[25-Sep-2017 02:21:32 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MaBdtheque/admin/templates/modifieralbum.phtml on line 26
+[25-Sep-2017 02:21:32 UTC] PHP Stack trace:
+[25-Sep-2017 02:21:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php:0
+[25-Sep-2017 02:21:32 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php:11
+[25-Sep-2017 02:21:46 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MaBdtheque/admin/templates/modifieralbum.phtml on line 26
+[25-Sep-2017 02:21:46 UTC] PHP Stack trace:
+[25-Sep-2017 02:21:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php:0
+[25-Sep-2017 02:21:46 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php:11
+[25-Sep-2017 02:23:04 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MaBdtheque/admin/templates/modifieralbum.phtml on line 26
+[25-Sep-2017 02:23:04 UTC] PHP Stack trace:
+[25-Sep-2017 02:23:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php:0
+[25-Sep-2017 02:23:04 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php:11
+[25-Sep-2017 02:26:03 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MaBdtheque/admin/templates/modifieralbum.phtml on line 26
+[25-Sep-2017 02:26:03 UTC] PHP Stack trace:
+[25-Sep-2017 02:26:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php:0
+[25-Sep-2017 02:26:03 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php:11
+[25-Sep-2017 02:28:20 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MaBdtheque/admin/templates/modifieralbum.phtml on line 26
+[25-Sep-2017 02:28:20 UTC] PHP Stack trace:
+[25-Sep-2017 02:28:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php:0
+[25-Sep-2017 02:28:20 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php:11
+[25-Sep-2017 02:35:24 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/MaBdtheque/admin/templates/modifieralbum.phtml on line 28
+[25-Sep-2017 02:35:24 UTC] PHP Stack trace:
+[25-Sep-2017 02:35:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php:0
+[25-Sep-2017 02:39:55 UTC] PHP Parse error:  syntax error, unexpected '?>' in /home/ubuntu/workspace/MaBdtheque/admin/templates/modifieralbum.phtml on line 27
+[25-Sep-2017 02:39:55 UTC] PHP Stack trace:
+[25-Sep-2017 02:39:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php:0
+[25-Sep-2017 02:40:24 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/MaBdtheque/admin/templates/modifieralbum.phtml on line 31
+[25-Sep-2017 02:40:24 UTC] PHP Stack trace:
+[25-Sep-2017 02:40:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php:0
+[25-Sep-2017 02:41:42 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MaBdtheque/admin/templates/modifieralbum.phtml on line 26
+[25-Sep-2017 02:41:42 UTC] PHP Stack trace:
+[25-Sep-2017 02:41:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php:0
+[25-Sep-2017 02:41:42 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php:11
+[25-Sep-2017 02:56:26 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MaBdtheque/admin/templates/modifieralbum.phtml on line 26
+[25-Sep-2017 02:56:26 UTC] PHP Stack trace:
+[25-Sep-2017 02:56:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php:0
+[25-Sep-2017 02:56:26 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php:11
+[27-Sep-2017 23:17:23 UTC] PHP Parse error:  syntax error, unexpected ')', expecting '&' or variable (T_VARIABLE) in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 93
+[27-Sep-2017 23:17:23 UTC] PHP Stack trace:
+[27-Sep-2017 23:17:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/index.php:0
+[01-Oct-2017 21:05:08 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MaBdtheque/admin/templates/modifieralbum.phtml on line 38
+[01-Oct-2017 21:05:08 UTC] PHP Stack trace:
+[01-Oct-2017 21:05:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php:0
+[01-Oct-2017 21:05:08 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php:18
+[01-Oct-2017 21:08:21 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1051 Unknown table 'dessinateurs'' in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php:260
+Stack trace:
+#0 /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php(260): PDO->query('??SELECT dessin...')
+#1 /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php(12): getAllDessinateurs()
+#2 {main}
+  thrown in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 260
+[01-Oct-2017 21:14:18 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1051 Unknown table 'dessinateurs'' in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php:260
+Stack trace:
+#0 /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php(260): PDO->query('??SELECT dessin...')
+#1 /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php(12): getAllDessinateurs()
+#2 {main}
+  thrown in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 260
+[02-Oct-2017 05:01:59 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'editeur.nom_editeur' in 'order clause'' in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php:329
+Stack trace:
+#0 /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php(329): PDO->query('??SELECT editeu...')
+#1 /home/ubuntu/workspace/MaBdtheque/admin/modifieralbum.php(16): getAllEditeurs()
+#2 {main}
+  thrown in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 329
+[06-Oct-2017 17:44:42 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':monid' at line 3' in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php:295
+Stack trace:
+#0 /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php(295): PDO->query('??SELECT dessin...')
+#1 /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesdessinateur.php(7): getInfoDessinateur('1')
+#2 {main}
+  thrown in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 295
+[06-Oct-2017 17:49:56 UTC] PHP Warning:  require_once(templates/modifierdonneesdessinateur.phtml): failed to open stream: No such file or directory in /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesdessinateur.php on line 9
+[06-Oct-2017 17:49:56 UTC] PHP Stack trace:
+[06-Oct-2017 17:49:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesdessinateur.php:0
+[06-Oct-2017 17:49:56 UTC] PHP Fatal error:  require_once(): Failed opening required 'templates/modifierdonneesdessinateur.phtml' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesdessinateur.php on line 9
+[06-Oct-2017 17:49:56 UTC] PHP Stack trace:
+[06-Oct-2017 17:49:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesdessinateur.php:0
+[06-Oct-2017 17:50:20 UTC] PHP Warning:  require_once(templates/modifierdonneesdessinateur.phtml): failed to open stream: No such file or directory in /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesdessinateur.php on line 9
+[06-Oct-2017 17:50:20 UTC] PHP Stack trace:
+[06-Oct-2017 17:50:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesdessinateur.php:0
+[06-Oct-2017 17:50:20 UTC] PHP Fatal error:  require_once(): Failed opening required 'templates/modifierdonneesdessinateur.phtml' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesdessinateur.php on line 9
+[06-Oct-2017 17:50:20 UTC] PHP Stack trace:
+[06-Oct-2017 17:50:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesdessinateur.php:0
+[06-Oct-2017 17:59:01 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/MaBdtheque/admin/templates/modifierdonneesdessinateur.phtml on line 4
+[06-Oct-2017 17:59:01 UTC] PHP Stack trace:
+[06-Oct-2017 17:59:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesdessinateur.php:0
+[13-Oct-2017 13:39:58 UTC] PHP Warning:  require_once(templates/recherchecoloriste.phtml): failed to open stream: No such file or directory in /home/ubuntu/workspace/MaBdtheque/admin/recherchecoloriste.php on line 7
+[13-Oct-2017 13:39:58 UTC] PHP Stack trace:
+[13-Oct-2017 13:39:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/recherchecoloriste.php:0
+[13-Oct-2017 13:39:58 UTC] PHP Fatal error:  require_once(): Failed opening required 'templates/recherchecoloriste.phtml' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/MaBdtheque/admin/recherchecoloriste.php on line 7
+[13-Oct-2017 13:39:58 UTC] PHP Stack trace:
+[13-Oct-2017 13:39:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/recherchecoloriste.php:0
+[13-Oct-2017 15:23:10 UTC] PHP Warning:  require_once(templates/recherchecoloriste.phtml): failed to open stream: No such file or directory in /home/ubuntu/workspace/MaBdtheque/admin/recherchecoloriste.php on line 7
+[13-Oct-2017 15:23:10 UTC] PHP Stack trace:
+[13-Oct-2017 15:23:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/recherchecoloriste.php:0
+[13-Oct-2017 15:23:10 UTC] PHP Fatal error:  require_once(): Failed opening required 'templates/recherchecoloriste.phtml' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/MaBdtheque/admin/recherchecoloriste.php on line 7
+[13-Oct-2017 15:23:10 UTC] PHP Stack trace:
+[13-Oct-2017 15:23:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/recherchecoloriste.php:0
+[13-Oct-2017 19:07:13 UTC] PHP Fatal error:  Call to undefined function getAllDessinateur() in /home/ubuntu/workspace/MaBdtheque/admin/ajouteralbum.php on line 6
+[13-Oct-2017 19:07:13 UTC] PHP Stack trace:
+[13-Oct-2017 19:07:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/ajouteralbum.php:0
+[13-Oct-2017 19:23:07 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MaBdtheque/admin/templates/ajouteralbum.phtml on line 50
+[13-Oct-2017 19:23:07 UTC] PHP Stack trace:
+[13-Oct-2017 19:23:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/ajouteralbum.php:0
+[13-Oct-2017 19:23:07 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/ajouteralbum.php:12
+[13-Oct-2017 19:28:11 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/MaBdtheque/admin/templates/ajouteralbum.phtml on line 27
+[13-Oct-2017 19:28:11 UTC] PHP Stack trace:
+[13-Oct-2017 19:28:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/ajouteralbum.php:0
+[13-Oct-2017 19:28:17 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/MaBdtheque/admin/templates/ajouteralbum.phtml on line 27
+[13-Oct-2017 19:28:17 UTC] PHP Stack trace:
+[13-Oct-2017 19:28:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/ajouteralbum.php:0
+[27-Oct-2017 22:13:42 UTC] PHP Warning:  require_once(templates/listealbumspourcecoloriste.phtml): failed to open stream: No such file or directory in /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcecoloriste.php on line 9
+[27-Oct-2017 22:13:42 UTC] PHP Stack trace:
+[27-Oct-2017 22:13:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcecoloriste.php:0
+[27-Oct-2017 22:13:42 UTC] PHP Fatal error:  require_once(): Failed opening required 'templates/listealbumspourcecoloriste.phtml' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcecoloriste.php on line 9
+[27-Oct-2017 22:13:42 UTC] PHP Stack trace:
+[27-Oct-2017 22:13:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcecoloriste.php:0
+[28-Oct-2017 06:19:05 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MaBdtheque/admin/templates/listealbumspourcecoloriste.phtml on line 18
+[28-Oct-2017 06:19:05 UTC] PHP Stack trace:
+[28-Oct-2017 06:19:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/recherche.php:0
+[28-Oct-2017 06:19:05 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/recherche.php:6
+[28-Oct-2017 06:19:16 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MaBdtheque/admin/templates/listealbumspourcecoloriste.phtml on line 18
+[28-Oct-2017 06:19:16 UTC] PHP Stack trace:
+[28-Oct-2017 06:19:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/recherche.php:0
+[28-Oct-2017 06:19:16 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/recherche.php:6
+[29-Oct-2017 07:32:22 UTC] PHP Parse error:  syntax error, unexpected '$morceauachercher' (T_VARIABLE) in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 439
+[29-Oct-2017 07:32:22 UTC] PHP Stack trace:
+[29-Oct-2017 07:32:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/index.php:0
+[29-Oct-2017 07:52:50 UTC] PHP Parse error:  syntax error, unexpected '$morceauachercher' (T_VARIABLE) in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 439
+[29-Oct-2017 07:52:50 UTC] PHP Stack trace:
+[29-Oct-2017 07:52:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/index.php:0
+[29-Oct-2017 07:53:04 UTC] PHP Parse error:  syntax error, unexpected '$morceauachercher' (T_VARIABLE) in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 439
+[29-Oct-2017 07:53:04 UTC] PHP Stack trace:
+[29-Oct-2017 07:53:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/index.php:0
+[29-Oct-2017 07:53:09 UTC] PHP Parse error:  syntax error, unexpected '$morceauachercher' (T_VARIABLE) in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 439
+[29-Oct-2017 07:53:09 UTC] PHP Stack trace:
+[29-Oct-2017 07:53:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/index.php:0
+[29-Oct-2017 07:53:16 UTC] PHP Parse error:  syntax error, unexpected '$morceauachercher' (T_VARIABLE) in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 439
+[29-Oct-2017 07:53:16 UTC] PHP Stack trace:
+[29-Oct-2017 07:53:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/index.php:0
+[29-Oct-2017 07:53:24 UTC] PHP Parse error:  syntax error, unexpected '$morceauachercher' (T_VARIABLE) in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 439
+[29-Oct-2017 07:53:24 UTC] PHP Stack trace:
+[29-Oct-2017 07:53:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/index.php:0
+[29-Oct-2017 07:54:23 UTC] PHP Parse error:  syntax error, unexpected '$morceauachercher' (T_VARIABLE) in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 439
+[29-Oct-2017 07:54:23 UTC] PHP Stack trace:
+[29-Oct-2017 07:54:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/index.php:0
+[29-Oct-2017 07:59:26 UTC] PHP Parse error:  syntax error, unexpected ''"' (T_CONSTANT_ENCAPSED_STRING) in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 442
+[29-Oct-2017 07:59:26 UTC] PHP Stack trace:
+[29-Oct-2017 07:59:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/index.php:0
+[29-Oct-2017 08:13:55 UTC] PHP Parse error:  syntax error, unexpected ''SELECT album.*,' (T_ENCAPSED_AND_WHITESPACE) in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 421
+[29-Oct-2017 08:13:55 UTC] PHP Stack trace:
+[29-Oct-2017 08:13:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/index.php:0
+[29-Oct-2017 23:15:38 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MaBdtheque/admin/templates/listealbumspourcetterecherche.phtml on line 24
+[29-Oct-2017 23:15:38 UTC] PHP Stack trace:
+[29-Oct-2017 23:15:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetterecherche.php:0
+[29-Oct-2017 23:15:38 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetterecherche.php:7
+[30-Oct-2017 00:01:21 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MaBdtheque/admin/templates/listealbumspourcetterecherche.phtml on line 24
+[30-Oct-2017 00:01:21 UTC] PHP Stack trace:
+[30-Oct-2017 00:01:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetterecherche.php:0
+[30-Oct-2017 00:01:21 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetterecherche.php:7
+[30-Oct-2017 00:09:42 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MaBdtheque/admin/templates/listealbumspourcetterecherche.phtml on line 25
+[30-Oct-2017 00:09:42 UTC] PHP Stack trace:
+[30-Oct-2017 00:09:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetterecherche.php:0
+[30-Oct-2017 00:09:42 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetterecherche.php:5
+[30-Oct-2017 00:11:34 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MaBdtheque/admin/templates/listealbumspourcetterecherche.phtml on line 25
+[30-Oct-2017 00:11:34 UTC] PHP Stack trace:
+[30-Oct-2017 00:11:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetterecherche.php:0
+[30-Oct-2017 00:11:34 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetterecherche.php:6
+[30-Oct-2017 00:22:29 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MaBdtheque/admin/templates/listealbumspourcetterecherche.phtml on line 25
+[30-Oct-2017 00:22:29 UTC] PHP Stack trace:
+[30-Oct-2017 00:22:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetterecherche.php:0
+[30-Oct-2017 00:22:29 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetterecherche.php:6
+[30-Oct-2017 00:28:50 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MaBdtheque/admin/templates/listealbumspourcetterecherche.phtml on line 25
+[30-Oct-2017 00:28:50 UTC] PHP Stack trace:
+[30-Oct-2017 00:28:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetterecherche.php:0
+[30-Oct-2017 00:28:50 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetterecherche.php:6
+[30-Oct-2017 02:05:15 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MaBdtheque/admin/templates/listealbumspourcetterecherche.phtml on line 26
+[30-Oct-2017 02:05:15 UTC] PHP Stack trace:
+[30-Oct-2017 02:05:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetterecherche.php:0
+[30-Oct-2017 02:05:15 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetterecherche.php:6
+[02-Nov-2017 20:04:52 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MaBdtheque/admin/templates/listealbumspourcetterecherche.phtml on line 26
+[02-Nov-2017 20:04:52 UTC] PHP Stack trace:
+[02-Nov-2017 20:04:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetterecherche.php:0
+[02-Nov-2017 20:04:52 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetterecherche.php:6
+[02-Nov-2017 22:46:38 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MaBdtheque/admin/templates/listealbumspourcetterecherche.phtml on line 26
+[02-Nov-2017 22:46:38 UTC] PHP Stack trace:
+[02-Nov-2017 22:46:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetterecherche.php:0
+[02-Nov-2017 22:46:38 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetterecherche.php:6
+[02-Nov-2017 22:51:07 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MaBdtheque/admin/templates/listealbumspourcetterecherche.phtml on line 26
+[02-Nov-2017 22:51:07 UTC] PHP Stack trace:
+[02-Nov-2017 22:51:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetterecherche.php:0
+[02-Nov-2017 22:51:07 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetterecherche.php:6
+[02-Nov-2017 23:10:18 UTC] PHP Parse error:  syntax error, unexpected 'var_dump' (T_STRING) in /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetterecherche.php on line 8
+[03-Nov-2017 11:13:49 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MaBdtheque/admin/templates/listealbumspourcetterecherche.phtml on line 26
+[03-Nov-2017 11:13:49 UTC] PHP Stack trace:
+[03-Nov-2017 11:13:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetterecherche.php:0
+[03-Nov-2017 11:13:49 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetterecherche.php:10
+[03-Nov-2017 11:21:48 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MaBdtheque/admin/templates/listealbumspourcetterecherche.phtml on line 26
+[03-Nov-2017 11:21:48 UTC] PHP Stack trace:
+[03-Nov-2017 11:21:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetterecherche.php:0
+[03-Nov-2017 11:21:48 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetterecherche.php:10
+[03-Nov-2017 11:22:50 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MaBdtheque/admin/templates/listealbumspourcetterecherche.phtml on line 26
+[03-Nov-2017 11:22:50 UTC] PHP Stack trace:
+[03-Nov-2017 11:22:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetterecherche.php:0
+[03-Nov-2017 11:22:50 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetterecherche.php:10
+[03-Nov-2017 11:25:47 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MaBdtheque/admin/templates/listealbumspourcetterecherche.phtml on line 27
+[03-Nov-2017 11:25:47 UTC] PHP Stack trace:
+[03-Nov-2017 11:25:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetterecherche.php:0
+[03-Nov-2017 11:25:47 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetterecherche.php:10
+[03-Nov-2017 11:26:56 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MaBdtheque/admin/templates/listealbumspourcetterecherche.phtml on line 27
+[03-Nov-2017 11:26:56 UTC] PHP Stack trace:
+[03-Nov-2017 11:26:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetterecherche.php:0
+[03-Nov-2017 11:26:56 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetterecherche.php:10
+[11-Nov-2017 20:32:14 UTC] PHP Warning:  require_once(./database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/MaBdtheque/admin/libraries/application.php on line 4
+[11-Nov-2017 20:32:14 UTC] PHP Stack trace:
+[11-Nov-2017 20:32:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetterecherche.php:0
+[11-Nov-2017 20:32:14 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetterecherche.php:3
+[11-Nov-2017 20:32:14 UTC] PHP Fatal error:  require_once(): Failed opening required './database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/MaBdtheque/admin/libraries/application.php on line 4
+[11-Nov-2017 20:32:14 UTC] PHP Stack trace:
+[11-Nov-2017 20:32:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetterecherche.php:0
+[11-Nov-2017 20:32:14 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetterecherche.php:3
+[17-Nov-2017 02:13:34 UTC] PHP Warning:  require_once(./database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/MaBdtheque/admin/libraries/application.php on line 4
+[17-Nov-2017 02:13:34 UTC] PHP Stack trace:
+[17-Nov-2017 02:13:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetterecherche.php:0
+[17-Nov-2017 02:13:34 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetterecherche.php:3
+[17-Nov-2017 02:13:34 UTC] PHP Fatal error:  require_once(): Failed opening required './database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/MaBdtheque/admin/libraries/application.php on line 4
+[17-Nov-2017 02:13:34 UTC] PHP Stack trace:
+[17-Nov-2017 02:13:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetterecherche.php:0
+[17-Nov-2017 02:13:34 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetterecherche.php:3
+[17-Nov-2017 02:14:21 UTC] PHP Warning:  require_once(./database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/MaBdtheque/admin/libraries/application.php on line 4
+[17-Nov-2017 02:14:21 UTC] PHP Stack trace:
+[17-Nov-2017 02:14:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetterecherche.php:0
+[17-Nov-2017 02:14:21 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetterecherche.php:3
+[17-Nov-2017 02:14:21 UTC] PHP Fatal error:  require_once(): Failed opening required './database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/MaBdtheque/admin/libraries/application.php on line 4
+[17-Nov-2017 02:14:21 UTC] PHP Stack trace:
+[17-Nov-2017 02:14:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetterecherche.php:0
+[17-Nov-2017 02:14:21 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetterecherche.php:3
+[17-Nov-2017 02:14:28 UTC] PHP Warning:  require_once(./database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/MaBdtheque/admin/libraries/application.php on line 4
+[17-Nov-2017 02:14:28 UTC] PHP Stack trace:
+[17-Nov-2017 02:14:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetterecherche.php:0
+[17-Nov-2017 02:14:28 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetterecherche.php:3
+[17-Nov-2017 02:14:28 UTC] PHP Fatal error:  require_once(): Failed opening required './database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/MaBdtheque/admin/libraries/application.php on line 4
+[17-Nov-2017 02:14:28 UTC] PHP Stack trace:
+[17-Nov-2017 02:14:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetterecherche.php:0
+[17-Nov-2017 02:14:28 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetterecherche.php:3
+[23-Nov-2017 16:22:01 UTC] PHP Fatal error:  Cannot redeclare verificationNouveaute() (previously declared in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php:9) in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 422
+[23-Nov-2017 16:22:01 UTC] PHP Stack trace:
+[23-Nov-2017 16:22:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/index.php:0
+[24-Nov-2017 11:50:00 UTC] PHP Fatal error:  Cannot redeclare verificationNouveaute() (previously declared in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php:9) in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 422
+[24-Nov-2017 11:50:00 UTC] PHP Stack trace:
+[24-Nov-2017 11:50:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/recherchedessinateur.php:0
+[24-Nov-2017 11:50:25 UTC] PHP Fatal error:  Cannot redeclare verificationNouveaute() (previously declared in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php:9) in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 422
+[24-Nov-2017 11:50:25 UTC] PHP Stack trace:
+[24-Nov-2017 11:50:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/index.php:0
+[25-Nov-2017 04:52:19 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 199
+[25-Nov-2017 04:52:19 UTC] PHP Stack trace:
+[25-Nov-2017 04:52:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/recherchedessinateur.php:0
+[25-Nov-2017 06:03:54 UTC] PHP Fatal error:  Call to undefined function getInfoscenariste() in /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesauteur.php on line 7
+[25-Nov-2017 06:03:54 UTC] PHP Stack trace:
+[25-Nov-2017 06:03:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesauteur.php:0
+[25-Nov-2017 06:06:56 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/MaBdtheque/admin/libraries/database.php on line 395
+[25-Nov-2017 06:06:56 UTC] PHP Stack trace:
+[25-Nov-2017 06:06:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/listebd.php:0
+[26-Nov-2017 10:17:59 UTC] PHP Parse error:  syntax error, unexpected 'var_dump' (T_STRING) in /home/ubuntu/workspace/MaBdtheque/admin/resultatrecherchenom.php on line 7
+[26-Nov-2017 10:23:13 UTC] PHP Parse error:  syntax error, unexpected '$nomsaisi' (T_VARIABLE) in /home/ubuntu/workspace/MaBdtheque/admin/resultatrecherchenom.php on line 5
+[26-Nov-2017 10:27:30 UTC] PHP Parse error:  syntax error, unexpected ']', expecting ',' or ';' in /home/ubuntu/workspace/MaBdtheque/admin/templates/resultatrecherchenom.phtml on line 5
+[26-Nov-2017 10:27:30 UTC] PHP Stack trace:
+[26-Nov-2017 10:27:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/resultatrecherchenom.php:0
+[26-Nov-2017 13:54:14 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/MaBdtheque/admin/templates/resultatrecherchenom.phtml on line 9
+[26-Nov-2017 13:54:14 UTC] PHP Stack trace:
+[26-Nov-2017 13:54:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/resultatrecherchenom.php:0
+[26-Nov-2017 18:39:02 UTC] PHP Parse error:  syntax error, unexpected 'var_dump' (T_STRING) in /home/ubuntu/workspace/MaBdtheque/admin/resultatrecherchenom.php on line 15
+[29-Nov-2017 15:19:02 UTC] PHP Warning:  require_once(templates/emprunt.phtml): failed to open stream: No such file or directory in /home/ubuntu/workspace/MaBdtheque/admin/emprunt.php on line 9
+[29-Nov-2017 15:19:02 UTC] PHP Stack trace:
+[29-Nov-2017 15:19:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/emprunt.php:0
+[29-Nov-2017 15:19:02 UTC] PHP Fatal error:  require_once(): Failed opening required 'templates/emprunt.phtml' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/MaBdtheque/admin/emprunt.php on line 9
+[29-Nov-2017 15:19:02 UTC] PHP Stack trace:
+[29-Nov-2017 15:19:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/emprunt.php:0
+[29-Nov-2017 15:21:50 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MaBdtheque/admin/templates/emprunt.phtml on line 25
+[29-Nov-2017 15:21:50 UTC] PHP Stack trace:
+[29-Nov-2017 15:21:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/emprunt.php:0
+[29-Nov-2017 15:21:50 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/emprunt.php:9
+[29-Nov-2017 15:28:04 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MaBdtheque/admin/templates/emprunt.phtml on line 24
+[29-Nov-2017 15:28:04 UTC] PHP Stack trace:
+[29-Nov-2017 15:28:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/emprunt.php:0
+[29-Nov-2017 15:28:04 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/emprunt.php:9
+[29-Nov-2017 15:33:37 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MaBdtheque/admin/templates/emprunt.phtml on line 24
+[29-Nov-2017 15:33:37 UTC] PHP Stack trace:
+[29-Nov-2017 15:33:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/emprunt.php:0
+[29-Nov-2017 15:33:37 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/emprunt.php:9
+[04-Dec-2017 21:24:10 UTC] PHP Fatal error:  Call to undefined function getAllEditeur() in /home/ubuntu/workspace/MaBdtheque/admin/rechercheediteur.php on line 5
+[04-Dec-2017 21:24:10 UTC] PHP Stack trace:
+[04-Dec-2017 21:24:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/rechercheediteur.php:0
+[04-Dec-2017 21:25:10 UTC] PHP Fatal error:  Call to undefined function getAllEditeur() in /home/ubuntu/workspace/MaBdtheque/admin/rechercheediteur.php on line 5
+[04-Dec-2017 21:25:10 UTC] PHP Stack trace:
+[04-Dec-2017 21:25:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/rechercheediteur.php:0
+[04-Dec-2017 21:28:48 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MaBdtheque/admin/templates/rechercheediteur.phtml on line 13
+[04-Dec-2017 21:28:48 UTC] PHP Stack trace:
+[04-Dec-2017 21:28:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/rechercheediteur.php:0
+[04-Dec-2017 21:28:48 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/rechercheediteur.php:7
+[04-Dec-2017 21:29:47 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/MaBdtheque/admin/templates/rechercheediteur.phtml on line 13
+[04-Dec-2017 21:29:47 UTC] PHP Stack trace:
+[04-Dec-2017 21:29:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/rechercheediteur.php:0
+[04-Dec-2017 21:29:47 UTC] PHP   2. require_once() /home/ubuntu/workspace/MaBdtheque/admin/rechercheediteur.php:7
+[04-Dec-2017 21:40:17 UTC] PHP Fatal error:  Call to undefined function getInfoEditeur() in /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesediteur.php on line 7
+[04-Dec-2017 21:40:17 UTC] PHP Stack trace:
+[04-Dec-2017 21:40:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesediteur.php:0
+[04-Dec-2017 21:44:56 UTC] PHP Warning:  require_once(templates/modifierdonneesediteur.phtml): failed to open stream: No such file or directory in /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesediteur.php on line 9
+[04-Dec-2017 21:44:56 UTC] PHP Stack trace:
+[04-Dec-2017 21:44:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesediteur.php:0
+[04-Dec-2017 21:44:56 UTC] PHP Fatal error:  require_once(): Failed opening required 'templates/modifierdonneesediteur.phtml' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesediteur.php on line 9
+[04-Dec-2017 21:44:56 UTC] PHP Stack trace:
+[04-Dec-2017 21:44:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesediteur.php:0
+[04-Dec-2017 21:46:15 UTC] PHP Warning:  require_once(templates/modifierdonneesediteur.phtml): failed to open stream: No such file or directory in /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesediteur.php on line 9
+[04-Dec-2017 21:46:15 UTC] PHP Stack trace:
+[04-Dec-2017 21:46:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesediteur.php:0
+[04-Dec-2017 21:46:15 UTC] PHP Fatal error:  require_once(): Failed opening required 'templates/modifierdonneesediteur.phtml' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesediteur.php on line 9
+[04-Dec-2017 21:46:15 UTC] PHP Stack trace:
+[04-Dec-2017 21:46:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesediteur.php:0
+[04-Dec-2017 21:49:12 UTC] PHP Warning:  require_once(templates/listealbumspourcetediteur.phtml): failed to open stream: No such file or directory in /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetediteur.php on line 9
+[04-Dec-2017 21:49:12 UTC] PHP Stack trace:
+[04-Dec-2017 21:49:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetediteur.php:0
+[04-Dec-2017 21:49:12 UTC] PHP Fatal error:  require_once(): Failed opening required 'templates/listealbumspourcetediteur.phtml' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetediteur.php on line 9
+[04-Dec-2017 21:49:12 UTC] PHP Stack trace:
+[04-Dec-2017 21:49:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/listealbumspourcetediteur.php:0
+[11-Dec-2017 13:15:32 UTC] PHP Warning:  require_once(templates/modifierdonneesediteur.phtml): failed to open stream: No such file or directory in /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesediteur.php on line 9
+[11-Dec-2017 13:15:32 UTC] PHP Stack trace:
+[11-Dec-2017 13:15:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesediteur.php:0
+[11-Dec-2017 13:15:32 UTC] PHP Fatal error:  require_once(): Failed opening required 'templates/modifierdonneesediteur.phtml' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesediteur.php on line 9
+[11-Dec-2017 13:15:32 UTC] PHP Stack trace:
+[11-Dec-2017 13:15:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesediteur.php:0
+[11-Dec-2017 13:15:59 UTC] PHP Warning:  require_once(templates/modifierdonneesediteur.phtml): failed to open stream: No such file or directory in /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesediteur.php on line 9
+[11-Dec-2017 13:15:59 UTC] PHP Stack trace:
+[11-Dec-2017 13:15:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesediteur.php:0
+[11-Dec-2017 13:15:59 UTC] PHP Fatal error:  require_once(): Failed opening required 'templates/modifierdonneesediteur.phtml' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesediteur.php on line 9
+[11-Dec-2017 13:15:59 UTC] PHP Stack trace:
+[11-Dec-2017 13:15:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesediteur.php:0
+[11-Dec-2017 13:17:56 UTC] PHP Warning:  require_once(templates/modifierdonneesediteur.phtml): failed to open stream: No such file or directory in /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesediteur.php on line 9
+[11-Dec-2017 13:17:56 UTC] PHP Stack trace:
+[11-Dec-2017 13:17:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesediteur.php:0
+[11-Dec-2017 13:17:56 UTC] PHP Fatal error:  require_once(): Failed opening required 'templates/modifierdonneesediteur.phtml' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesediteur.php on line 9
+[11-Dec-2017 13:17:56 UTC] PHP Stack trace:
+[11-Dec-2017 13:17:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesediteur.php:0
+[11-Dec-2017 13:23:10 UTC] PHP Warning:  require_once(templates/modifierdonneesediteur.phtml): failed to open stream: No such file or directory in /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesediteur.php on line 9
+[11-Dec-2017 13:23:10 UTC] PHP Stack trace:
+[11-Dec-2017 13:23:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesediteur.php:0
+[11-Dec-2017 13:23:10 UTC] PHP Fatal error:  require_once(): Failed opening required 'templates/modifierdonneesediteur.phtml' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesediteur.php on line 9
+[11-Dec-2017 13:23:10 UTC] PHP Stack trace:
+[11-Dec-2017 13:23:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesediteur.php:0
+[11-Dec-2017 13:51:49 UTC] PHP Warning:  require_once(templates/modifierdonneesediteur.phtml): failed to open stream: No such file or directory in /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesediteur.php on line 9
+[11-Dec-2017 13:51:49 UTC] PHP Stack trace:
+[11-Dec-2017 13:51:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesediteur.php:0
+[11-Dec-2017 13:51:49 UTC] PHP Fatal error:  require_once(): Failed opening required 'templates/modifierdonneesediteur.phtml' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesediteur.php on line 9
+[11-Dec-2017 13:51:49 UTC] PHP Stack trace:
+[11-Dec-2017 13:51:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesediteur.php:0
+[11-Dec-2017 15:05:53 UTC] PHP Warning:  require_once(templates/modifierdonneesediteur.phtml): failed to open stream: No such file or directory in /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesediteur.php on line 9
+[11-Dec-2017 15:05:53 UTC] PHP Stack trace:
+[11-Dec-2017 15:05:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesediteur.php:0
+[11-Dec-2017 15:05:53 UTC] PHP Fatal error:  require_once(): Failed opening required 'templates/modifierdonneesediteur.phtml' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesediteur.php on line 9
+[11-Dec-2017 15:05:53 UTC] PHP Stack trace:
+[11-Dec-2017 15:05:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesediteur.php:0
+[11-Dec-2017 15:11:39 UTC] PHP Warning:  require_once(templates/modifierdonneesediteur.phtml): failed to open stream: No such file or directory in /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesediteur.php on line 9
+[11-Dec-2017 15:11:39 UTC] PHP Stack trace:
+[11-Dec-2017 15:11:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesediteur.php:0
+[11-Dec-2017 15:11:39 UTC] PHP Fatal error:  require_once(): Failed opening required 'templates/modifierdonneesediteur.phtml' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesediteur.php on line 9
+[11-Dec-2017 15:11:39 UTC] PHP Stack trace:
+[11-Dec-2017 15:11:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesediteur.php:0
+[11-Dec-2017 15:14:21 UTC] PHP Warning:  require_once(templates/modifierdonneesediteur.phtml): failed to open stream: No such file or directory in /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesediteur.php on line 9
+[11-Dec-2017 15:14:21 UTC] PHP Stack trace:
+[11-Dec-2017 15:14:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesediteur.php:0
+[11-Dec-2017 15:14:21 UTC] PHP Fatal error:  require_once(): Failed opening required 'templates/modifierdonneesediteur.phtml' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesediteur.php on line 9
+[11-Dec-2017 15:14:21 UTC] PHP Stack trace:
+[11-Dec-2017 15:14:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/MaBdtheque/admin/modifierdonneesediteur.php:0

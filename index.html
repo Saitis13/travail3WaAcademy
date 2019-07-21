@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+    	<meta charset="UTF-8">
+    	<title>Ma Bdtheque</title>
+    	<!-- max 3 polices de caracteres -->
+        <link href="https://fonts.googleapis.com/css?family=Saira" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    	<link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <header>
+    	    <nav>
+    	        <a href="index.html">Accueil</a>	|
+    	        <a href="realisations.php">Realisations</a>|
+    	        <a href="moncv.php">mon CV</a> 
+            </nav> 
+        </header>
+        <main>
+            <h1>MA BDTHEQUE</h1>
+            <h2>Diaporama de quelques couvertures d'albums</h2>
+            <nav class="toolbar">
+                <!-- <a id="toolbar-toggle" href="#"><i class="fa fa-arrow-right"></i> Barre d'outils</a>-->
+                <ul class="hide">
+                    <li><button id="slider-previous" title="Image précédente"><i class="fa fa-backward"></i></button></li>
+                    <li><button id="slider-toggle" title="Démarrer/Arrêter le carrousel"><i class="fa fa-play"></i></button></li>
+                    <li><button id="slider-next" title="Image suivante"><i class="fa fa-forward"></i></button></li>
+                    <li><button id="slider-random" title="Sélectionner une image aléatoire"><i class="fa fa-random"></i></button></li>
+                </ul>
+            </nav>
+            <figure id="slider" class="slider">
+                <figcaption></figcaption>
+                <img src="*" alt="Photo du carrousel">
+               
+            </figure>
+        </main>
+    
+        <!--appel du js -->
+        <script src="js/slider.js"></script>
+    
+        <footer >
+    		<address>
+    			<strong>MaBdtheque by bernard RAPHAEL</strong><br>
+    		</address>
+    	</footer>
+
+     </body>
+</html>

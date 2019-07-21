@@ -1,0 +1,205 @@
+/*********** attention style des pages 1 et 2 de la partie visiteur ***********/
+html {
+	font-size: 62.5%;
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+} 
+/***********
+***********/
+body {
+	background: url(../images/fond.png)repeat;
+	font-family: 'Open Sans', sans-serif;
+}
+main{
+	max-width: 70%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+header, footer{
+	padding:40px 0;
+    font-size: 2rem;
+    background-color: RGB(102,165,158);
+    color: white;
+    text-shadow: 0 1px #4d4d4d;
+}
+ 
+nav a{
+	text-decoration: none;
+	color: white;
+	transition: all 0.3s ease 0s;
+}
+nav a:hover
+    {
+  color:black;
+    }
+    
+h1 {
+	font-size: 5rem;
+	text-transform: uppercase;
+	color: black;
+}
+
+h2 {
+	font-size: 4rem;
+	text-transform: uppercase;
+	color: #015770;
+}
+h3{
+	font-size: 2rem;
+}
+
+h5{
+	border-width:1px;
+    border-style:solid;
+    border-color:black;
+	font-size: 2rem;}
+
+
+img {
+	border: 20px solid white;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 0 10px 1px rgba(0,0,0,0.5);
+	box-shadow: 0 0 10px 1px rgba(0,0,0,0.5);
+}
+
+figcaption{
+	color: #2A8782;
+	font-size: 4rem;
+	Font-Weight: Bold;
+	text-shadow: 0 0 5px #000000;
+	text-align: center;
+}
+
+
+.toolbar ul {
+	color: #2A8782;
+	font-size: 1.6rem;
+	text-decoration: none;
+}
+
+.toolbar-toggle {
+	color: #2A8782;
+	font-size: 3rem;
+	text-decoration: none;
+}
+ 
+/***********
+.hide{
+display :none;
+ }
+
+.toolbar-toggle {
+	color: #2A8782;
+	font-size: 1.6rem;
+	text-decoration: none;
+}
+.toolbar{
+background-color: limegreen;
+	}
+	
+***********/
+
+ ul
+{
+    /* structure */
+    padding-left: 0;
+
+    /* presentation */
+    list-style-type: none;
+    text-align: center;
+}
+ ul li
+{
+    display: inline-block;
+}
+ ul li + li
+{
+    margin-left: 1em;
+}
+span {
+	Font-Weight: Bold;
+}
+
+footer{
+	padding:40px 0;
+	font-size: 2rem;
+	text-align: center;
+    color: white;
+    text-shadow: 0 1px #4d4d4d;
+    
+    /*background-color: #71002a;/*option violet*/
+    background-color: #4CAF50; /* option vert*/
+    background-image: linear-gradient(to bottom,transparent 20%,rgba(0,0,0,.25) 100%);
+ }
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+						/* MEDIA QUERIES*/
+/*XXXXXXXXXXXXXXXXXXXXXXXXXX  mobile XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+@media screen and (max-width: 900px) {
+	main{
+	max-width: 99%;
+	text-align: left;
+    }
+
+    header, footer{
+    font-size: 2.5rem;
+    background-color: #71002a;/*option violet*/
+    }
+    
+    nav a:hover
+    {
+        border-bottom: 0;
+    }
+    
+    h1 {
+        text-align: center;
+       }
+       
+  img {
+	border: 10px solid white;
+	border-radius: 2px;
+	max-width: 100%;
+	height: auto;
+}
+       
+    p{
+        font-size: 3rem;
+        color: #015770 ;
+     }
+}/*fin de media   */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+						/* MEDIA QUERIES*/
+/*XXXXXXXXXXXXXXXXXXXXXXXXXX  mobile XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+@media screen and (max-width: 500px) {
+	main{
+	max-width: 100%;
+	text-align: left;
+    }
+
+    header, footer{
+    font-size: 3rem;
+    background-color: #ee8773;/*option orange*/
+    }
+    
+    nav a:hover
+    {
+        border-bottom: 0;
+    }
+    
+    h1 {
+        text-align: center;
+       }
+       
+   
+    p{
+        font-size: 3rem;
+        color: #015770 ;
+     }
+}/*fin de media   */
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXX  fin mobile XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+
