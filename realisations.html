@@ -1,27 +1,56 @@
-<?php
- require_once('templates/partials/header.phtml');
-?>
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style.css">
     <body>
         <header>
             <nav>
                 <a href="index.html">Accueil</a>    |
-                <a href="realisations.php">Realisations</a>|
+                <a href="realisations.html">Realisations</a>|
                 <a href="moncv.php">mon CV</a> 
             </nav> 
         </header>
+
+   
     <main>
-        <h1>Mes réalisations</h1>
+        <!--15 flocons * -->
+        <script type="text/javascript" src="js/tombelaneige.js"></script>
+        <script type="text/javascript">
+            window.onload = function(){
+                snow.init(15);
+            };
+        </script>
+
+        <h2>un diaporama pour voir mes images 3D</h2>
+        <nav class="toolbar">
+            <a id="toolbar-toggle" href="#"><i class="fa fa-arrow-right"></i> Barre d'outils</a>
+            <ul class="hide">
+                <li><button id="slider-previous" title="Image précédente"><i class="fa fa-backward"></i></button></li>
+                <li><button id="slider-toggle" title="Démarrer/Arrêter le carrousel"><i class="fa fa-play"></i></button></li>
+                <!--<li><button id="slider-stop" title="Arreter le carrousel"> <i class="fa fa-stop" aria-hidden="true"></i></button></li>-->
+                <li><button id="slider-next" title="Image suivante"><i class="fa fa-forward"></i></button></li>
+                <li><button id="slider-random" title="Sélectionner une image aléatoire"><i class="fa fa-random"></i></button></li>
+            </ul>
+        </nav>
+
+        <figure id="slider" class="slider">
+            <img src="*" alt="Photo du carrousel">
+            <figcaption></figcaption>
+        </figure>
+        <script src="js/slider1.js"></script>
+        <h2>Mes realisations</h2>
     
         <img src="images/UnderConstruction.gif" alt="en travaux">
            <!--appel du js -->
-        <script src="js/slider1.js"></script>
-        <!-- <script src="js/tombelaneige.js"></script> -->
-
+       
+        
     </main>
 
-<?php
- require_once('templates/partials/footer.phtml');
-?>
+    <footer >
+            <address>
+                <strong>MaBdtheque by bernard RAPHAEL</strong><br>
+            </address>
+     </footer>
+
+    </body>
+</html>
